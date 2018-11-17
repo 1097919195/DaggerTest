@@ -8,17 +8,7 @@
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="简单的Dagger2测试"
         android:background="#08000000"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/turnMVP"
-        android:text="界面跳转(无Dagger的MVP)"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/turnDaggerTest"
-        android:text="界面跳转(简单的Dagger)"/>
 
 </LinearLayout>
