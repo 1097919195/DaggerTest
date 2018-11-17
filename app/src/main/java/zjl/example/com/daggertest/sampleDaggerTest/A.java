@@ -1,4 +1,4 @@
-package zjl.example.com.daggertest.sampleTest;
+package zjl.example.com.daggertest.sampleDaggerTest;
 
 import android.util.Log;
 

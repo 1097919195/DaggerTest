@@ -6,6 +6,7 @@ import android.os.Bundle;
 
 import zjl.example.com.daggertest.R;
 import zjl.example.com.daggertest.base.test.MVPActivity;
+import zjl.example.com.daggertest.sampleDaggerTest.MainActivityTest;
 
 
 public class MainActivity extends AppCompatActivity {

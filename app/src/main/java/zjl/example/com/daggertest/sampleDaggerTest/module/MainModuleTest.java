@@ -1,9 +1,9 @@
-package zjl.example.com.daggertest.sampleTest.module;
+package zjl.example.com.daggertest.sampleDaggerTest.module;
 
 import dagger.Module;
 import dagger.Provides;
-import zjl.example.com.daggertest.sampleTest.A;
-import zjl.example.com.daggertest.sampleTest.B;
+import zjl.example.com.daggertest.sampleDaggerTest.A;
+import zjl.example.com.daggertest.sampleDaggerTest.B;
 
 /**
  * Created by Administrator on 2018/11/13 0013.

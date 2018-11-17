@@ -40,7 +40,7 @@ public class ApplicationModule {
 
     @Provides
     @Singleton
-    ApiService provideWanAndroidService(Retrofit retrofit) {
+    ApiService provideApiService(Retrofit retrofit) {
         return retrofit.create(ApiService.class);
     }
 }

@@ -1,9 +1,8 @@
-package zjl.example.com.daggertest.sampleTest.component;
+package zjl.example.com.daggertest.sampleDaggerTest.component;
 
 import dagger.Component;
-import zjl.example.com.daggertest.ui.MainActivity;
-import zjl.example.com.daggertest.sampleTest.module.MainModuleTest;
-import zjl.example.com.daggertest.ui.MainActivityTest;
+import zjl.example.com.daggertest.sampleDaggerTest.module.MainModuleTest;
+import zjl.example.com.daggertest.sampleDaggerTest.MainActivityTest;
 
 /**
  * Created by Administrator on 2018/11/13 0013.

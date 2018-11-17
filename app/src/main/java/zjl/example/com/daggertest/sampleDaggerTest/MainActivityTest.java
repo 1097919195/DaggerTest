@@ -1,6 +1,5 @@
-package zjl.example.com.daggertest.ui;
+package zjl.example.com.daggertest.sampleDaggerTest;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -8,10 +7,7 @@ import android.util.Log;
 import javax.inject.Inject;
 
 import zjl.example.com.daggertest.R;
-import zjl.example.com.daggertest.base.test.MVPActivity;
-import zjl.example.com.daggertest.sampleTest.A;
-import zjl.example.com.daggertest.sampleTest.B;
-import zjl.example.com.daggertest.sampleTest.component.DaggerMainComponentTest;
+import zjl.example.com.daggertest.sampleDaggerTest.component.DaggerMainComponentTest;
 
 /**
  * 简单的Dagger2测试
@@ -23,6 +19,9 @@ public class MainActivityTest extends AppCompatActivity {
      */
     @Inject
     A a;
+
+    @Inject
+    B b;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +40,7 @@ public class MainActivityTest extends AppCompatActivity {
          * 第三步  调用A 对象的方法
          */
         a.eat();
+        b.someThing();
 
         B b1 = new B();
         B b2 = new B();
