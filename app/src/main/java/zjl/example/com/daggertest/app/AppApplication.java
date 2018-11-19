@@ -12,6 +12,7 @@ public class AppApplication extends Application {
 
     private static AppApplication Application;
     private ApplicationComponent applicationComponent;
+//    private static ApplicationComponent applicationComponent;
 
     @Override
     public void onCreate() {

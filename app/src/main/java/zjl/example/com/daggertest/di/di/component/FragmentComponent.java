@@ -9,7 +9,7 @@ import zjl.example.com.daggertest.ui.HomeFragment;
 @FragmentScope
 @Component(modules = FragmentModule.class, dependencies = ApplicationComponent.class)
 public interface FragmentComponent {
-    void inject(HomeFragment homeFragment);
+//    void inject(HomeFragment homeFragment);
 //    void inject(ProjectFragment projectFragment);
 //    void inject(ProjectTabPageFragment projectTabPageFragment);
 //    void inject(HierarchyFragment hierarchyFragment);
