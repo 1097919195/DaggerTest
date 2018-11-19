@@ -27,6 +27,7 @@ public abstract class BaseDaggerMVPActivity<P extends BaseContract.Presenter> ex
         setContentView(getLayoutId());
         //要注意先后的顺序（先添加依赖才能调用对象）
         activityComponent = DaggerActivityComponent.builder()
+//                .applicationComponent(AppApplication.getApplicationComponent())
                 .applicationComponent(((AppApplication) getApplication()).getApplicationComponent())
                 .build();
         initPresenter();//

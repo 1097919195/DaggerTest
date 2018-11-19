@@ -11,8 +11,8 @@ import zjl.example.com.daggertest.di.di.module.ApplicationModule;
 public class AppApplication extends Application {
 
     private static AppApplication Application;
-    private ApplicationComponent applicationComponent;
 //    private static ApplicationComponent applicationComponent;
+    private ApplicationComponent applicationComponent;
 
     @Override
     public void onCreate() {
