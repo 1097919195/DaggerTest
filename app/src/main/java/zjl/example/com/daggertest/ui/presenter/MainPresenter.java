@@ -12,6 +12,7 @@ public class MainPresenter extends BasePresenter<MainContract.View> implements M
 
     private CompositeDisposable disposable = new CompositeDisposable();
 
+    //这里需要使用inject注解来声明这个MainPresenter是需要实例化的，当用到这个MainPresenter的时候，使用被inject注解的构造函数来实例化这个就可以获取到了（来替换provider注解的作用）
     @Inject
     public MainPresenter() {
     }
