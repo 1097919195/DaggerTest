@@ -10,6 +10,8 @@ import io.reactivex.Observable;
 import zjl.example.com.daggertest.data.bean.BaseResponse;
 import zjl.example.com.daggertest.data.source.local.DatabaseHelper;
 import zjl.example.com.daggertest.data.source.remote.ApiService;
+import zjl.example.com.daggertest.utils.RxSchedulers;
+
 
 @Singleton
 public class DataManager {
@@ -23,6 +25,7 @@ public class DataManager {
     }
 
     public Observable<BaseResponse> getData() {
-        return apiService.getData();
+        return apiService.getData()
+                .compose(RxSchedulers.io_main());//自己封装了一下
     }
 }

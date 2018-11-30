@@ -2,10 +2,12 @@ package zjl.example.com.daggertest.ui.contract;
 
 import zjl.example.com.daggertest.base.BaseContract;
 import zjl.example.com.daggertest.base.BasePresenter;
+import zjl.example.com.daggertest.data.bean.BaseResponse;
 
 public interface MainContract {
     interface View extends BaseContract.View {
         void returnData(String data);
+        void returnData(BaseResponse data);
     }
 
 

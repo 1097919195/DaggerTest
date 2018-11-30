@@ -3,11 +3,14 @@ package zjl.example.com.daggertest.ui;
 import android.content.Intent;
 import android.util.Log;
 
+import com.google.gson.Gson;
+
 import zjl.example.com.daggertest.R;
 import zjl.example.com.daggertest.base.BaseDaggerMVPActivity;
 import zjl.example.com.daggertest.base.test.MVPActivity;
 import zjl.example.com.daggertest.base.test.MVPContract;
 import zjl.example.com.daggertest.base.test.MVPPresenter;
+import zjl.example.com.daggertest.data.bean.BaseResponse;
 import zjl.example.com.daggertest.data.source.DataManager;
 import zjl.example.com.daggertest.sampleDaggerTest.MainActivityTest;
 import zjl.example.com.daggertest.ui.contract.MainContract;
@@ -15,8 +18,6 @@ import zjl.example.com.daggertest.ui.presenter.MainPresenter;
 
 
 public class MainActivity extends BaseDaggerMVPActivity<MainPresenter> implements MainContract.View {
-
-    private DataManager dataManager;
 
     @Override
     protected int getLayoutId() {
@@ -55,5 +56,11 @@ public class MainActivity extends BaseDaggerMVPActivity<MainPresenter> implement
     @Override
     public void returnData(String data) {
         Log.e("DaggerWithMvp", data);
+    }
+
+    @Override
+    public void returnData(BaseResponse data) {
+        String s = new Gson().toJson(data);
+        Log.e("DaggerWithMvp", s);
     }
 }
