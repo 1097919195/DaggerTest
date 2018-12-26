@@ -14,7 +14,7 @@ public interface MVPContract {
     }
 
 
-    //第一种接口实现的话 需要XXPresenter后面继承BasePresenter<MVPContract.View> 才能获取view
+    //第一种接口实现的话 需要XXPresenter后面继承BasePresenter<MVPContract.View> 才能获取view   因为getView方法定义在BasePresenter里面
     interface Presenter extends BaseContract.Presenter<View> {
         void getData();
     }
