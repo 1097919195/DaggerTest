@@ -1,6 +1,6 @@
 package zjl.example.com.daggertest.base;
 
-public class BasePresenter<V extends BaseContract.View> implements BaseContract.Presenter<V> {
+public abstract class BasePresenter<V extends BaseContract.View> implements BaseContract.Presenter<V> {
 
     private V view;
 

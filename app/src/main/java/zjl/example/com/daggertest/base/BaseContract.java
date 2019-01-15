@@ -7,6 +7,7 @@ public interface BaseContract {
         void showError(String message);
     }
 
+    //给BasePresenter使用的
     interface Presenter<V extends BaseContract.View> {
         void attachView(V view);
         void detachView();
