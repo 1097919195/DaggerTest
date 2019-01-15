@@ -7,7 +7,7 @@ public interface BaseContract {
         void showError(String message);
     }
 
-    //给BasePresenter使用的
+    //给BasePresenter使用的（统一声明关联和分离的行为）
     interface Presenter<V extends BaseContract.View> {
         void attachView(V view);
         void detachView();
