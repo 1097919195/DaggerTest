@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 import javax.inject.Inject;
+import javax.inject.Named;
 
 import zjl.example.com.daggertest.R;
 import zjl.example.com.daggertest.sampleDaggerTest.component.DaggerMainComponentTest;
@@ -17,6 +18,7 @@ public class MainActivityTest extends AppCompatActivity {
     /***
      * 第二步  使用Inject 注解，获取到A 对象的实例
      */
+    @Named("dev")
     @Inject
     A a;
 
@@ -41,6 +43,8 @@ public class MainActivityTest extends AppCompatActivity {
          */
         a.eat();
         b.someThing();
+
+        Log.e("Tag", a.toString());
 
         B b1 = new B();
         B b2 = new B();

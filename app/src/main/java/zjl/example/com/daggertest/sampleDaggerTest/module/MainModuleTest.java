@@ -1,5 +1,7 @@
 package zjl.example.com.daggertest.sampleDaggerTest.module;
 
+import javax.inject.Named;
+
 import dagger.Module;
 import dagger.Provides;
 import zjl.example.com.daggertest.sampleDaggerTest.A;
@@ -14,6 +16,7 @@ import zjl.example.com.daggertest.sampleDaggerTest.B;
 public class MainModuleTest {
     //第二步 使用Provider 注解 实例化对象
     @Provides
+    @Named("dev")
     A providerA(B b) {
         return new A(b);
     }
