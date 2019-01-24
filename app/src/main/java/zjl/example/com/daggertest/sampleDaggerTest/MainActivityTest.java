@@ -35,7 +35,8 @@ public class MainActivityTest extends AppCompatActivity {
         //第一种方式(简单的注入create()其实就是builder().build())
         DaggerMainComponentTest.create().inject(this);
 
-//        //第二种方式
+        //第二种方式
+        //获取具体的module和component关系：https://blog.csdn.net/axi295309066/article/details/53869651
 //        DaggerMainComponentTest.builder().build().inject(this);
 
         /***

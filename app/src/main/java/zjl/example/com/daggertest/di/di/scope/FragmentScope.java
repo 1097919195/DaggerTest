@@ -9,5 +9,5 @@ import javax.inject.Scope;
 @Documented
 @Scope
 @Retention(value = RetentionPolicy.RUNTIME)
-public @interface FragmentScope {
+public @interface FragmentScope {//使用scope表示使用的范围，保证ApplicationComponent为单例，参考单利注意事项
 }

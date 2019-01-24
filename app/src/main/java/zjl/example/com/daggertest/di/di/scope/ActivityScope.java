@@ -9,5 +9,5 @@ import javax.inject.Scope;
 @Documented
 @Scope
 @Retention(value = RetentionPolicy.RUNTIME)
-public @interface ActivityScope {
+public @interface ActivityScope {//使用scope表示使用的范围，保证ApplicationComponent为单例，参考单利注意事项
 }

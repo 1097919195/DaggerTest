@@ -6,7 +6,7 @@ import zjl.example.com.daggertest.di.di.scope.FragmentScope;
 import zjl.example.com.daggertest.ui.HomeFragment;
 
 
-@FragmentScope
+@FragmentScope//子类component的Scoped 要小于父类的Scoped，所以添加注解指明范围，参考单利注意事项
 @Component(modules = FragmentModule.class, dependencies = ApplicationComponent.class)
 public interface FragmentComponent {
 //    void inject(HomeFragment homeFragment);
